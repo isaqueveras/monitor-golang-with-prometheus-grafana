@@ -9,6 +9,7 @@ RUN go mod download && go mod verify
 
 COPY main.go ./
 COPY metrics.go ./
+COPY outis.go ./
 
 RUN go build -o /my-app
 
